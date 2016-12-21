@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.rahul.wearable.MainActivity"
+    tools:deviceIds="wear">
+    <LinearLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_hr"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="40sp"
+                tools:text="15:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="40sp"
+                tools:text="50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:gravity="center"
+            tools:text="Fri, Jul 14 2015"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:alpha="0.7" />
+
+        <View
+            android:layout_margin="18dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled" />
+        <LinearLayout
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:contentDescription="@string/weather_icon"
+                app:srcCompat="@drawable/ic_clear"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false" />
+            <TextView
+                android:id="@+id/tv_max_temp"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                tools:text="25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tv_min_temp"
+                android:gravity="center"
+                android:textSize="34sp"
+                android:layout_weight="1"
+                tools:text="16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-thin" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
