@@ -24,6 +24,8 @@ public class AllListenerService extends WearableListenerService {
     private static final String WEATHER_ID_KEY = "id_key";
     private static final String WEATHER_MIN_TEMP = "min_temp_key";
     private static final String WEATHER_MAX_TEMP = "max_temp_key";
+    private static final String WEATHER_UNIT_KEY = "weather_unit_key";
+
 
 
     GoogleApiClient mGoogleApiClient;
@@ -49,7 +51,8 @@ public class AllListenerService extends WearableListenerService {
                     DataMap dataMap = DataMapItem.fromDataItem(item).getDataMap();
                     WearDataModal modal = new WearDataModal(dataMap.getInt(WEATHER_ID_KEY),
                             dataMap.getFloat(WEATHER_MIN_TEMP),
-                            dataMap.getFloat(WEATHER_MAX_TEMP)
+                            dataMap.getFloat(WEATHER_MAX_TEMP),
+                            dataMap.getString(WEATHER_UNIT_KEY)
                     );
                     updateCount(getApplicationContext(),modal);
                 }

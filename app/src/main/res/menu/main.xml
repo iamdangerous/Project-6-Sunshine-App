@@ -22,10 +22,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_send_dummy_data"
-        android:orderInCategory="100"
-        android:title="@string/send_dummy_data"
-        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/action_send_dummy_data"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/send_dummy_data"-->
+        <!--app:showAsAction="never" />-->
 
 </menu>

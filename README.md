@@ -2,6 +2,7 @@ Advanced Android Sample App
 ===================================
 
 Synchronizes weather information from OpenWeatherMap on Android Phones and Tablets. Used in the Udacity Advanced Android course.
+This app collects weather data from http://openweathermap.org .It shows them on list and on a wearable device
 
 Pre-requisites
 --------------
@@ -19,8 +20,18 @@ BumpTech Glide 3.5.2
 
 Getting Started
 ---------------
-This sample uses the Gradle build system.  To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
+Include key for openweathermap api at app/build.gradle
+
+`buildTypes.each {
+        it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', "\"YOUR KEY\""
+    }`
+
+<h6>For debug purpose</h6>
+1. install debug build on wearable first
+2. Then install debug build on phone
+
+<h6>Note</h6>
+To Test whether data are being sent or not , check the log cat or console of both phone and wearable. A data will be sent whenever you will change temperature unit on phone.
 
 Support
 -------
@@ -49,4 +60,3 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
-

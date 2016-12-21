@@ -139,6 +139,13 @@ public class DigitalWatchFace extends CanvasWatchFaceService {
 //                mSecondPaint.setAntiAlias(antiAlias);
 //                mTickPaint.setAntiAlias(antiAlias);
             }
+
+            if(inAmbientMode)
+            {
+                mBackgroundPaint.setColor(ContextCompat.getColor(getApplicationContext(),R.color.black));
+            }else {
+                mBackgroundPaint.setColor(ContextCompat.getColor(getApplicationContext(),R.color.light_blue));
+            }
             invalidate();
             updateTimer();
         }
@@ -260,6 +267,17 @@ public class DigitalWatchFace extends CanvasWatchFaceService {
             boolean isRound = insets.isRound();
             mXOffset = resources.getDimension(isRound
                     ? R.dimen.digital_x_offset_round : R.dimen.digital_x_offset);
+            mYOffset = resources.getDimension(isRound
+                    ? R.dimen.digital_y_offset_round : R.dimen.digital_y_offset);
+            mDateYOffset = resources.getDimension(isRound
+                    ? R.dimen.digital_date_y_offset_round : R.dimen.digital_date_y_offset);
+            mCenterLineYOffset = resources.getDimension(isRound
+                    ? R.dimen.digital_center_line_y_offset_round : R.dimen.digital_center_line_y_offset);
+            mBmpYOffset = resources.getDimension(isRound
+                    ? R.dimen.digital_weather_y_offset_round : R.dimen.digital_weather_y_offset);
+            mMaxTempYOffset = resources.getDimension(isRound
+                    ? R.dimen.digital_max_temp_y_offset_round : R.dimen.digital_max_temp_y_offset);
+
             float textSize = resources.getDimension(isRound
                     ? R.dimen.digital_text_size_round : R.dimen.digital_text_size);
             float amPmSize = resources.getDimension(isRound

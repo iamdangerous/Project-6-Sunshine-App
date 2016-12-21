@@ -190,10 +190,10 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.action_settings:
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
-            case R.id.action_send_dummy_data:
-//                sendDummyData();
-                NotifyWearService.sendWearData(this);
-                return true;
+//            case R.id.action_send_dummy_data:
+////                sendDummyData();
+//                NotifyWearService.sendWearData(this);
+//                return true;
         }
 //
 //        //noinspection SimplifiableIfStatement
