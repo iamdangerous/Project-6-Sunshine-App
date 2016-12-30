@@ -36,11 +36,11 @@ To Test whether data are being sent or not , check the log cat or console of bot
 Screens
 -------
 
-![screen](../master/screens/screen_1.png)   ![screen](../master/screens/screen_2.png)
+![screen](../master/Screens/screen_1.png)   ![screen](../master/Screens/screen_2.png)
 
-![screen](../master/screens/screen_1_land.png)   ![screen](../master/screens/screen_2_land.png)
+![screen](../master/Screens/screen_1_land.png)   ![screen](../master/Screens/screen_2_land.png)
 
-![screen](../master/screens/circular_image.png)   ![screen](../master/screens/square_image.png)
+![screen](../master/Screens/circular_image.png)   ![screen](../master/Screens/square_image.png)
 
 
 Support
