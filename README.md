@@ -33,6 +33,16 @@ Include key for openweathermap api at app/build.gradle
 <h6>Note</h6>
 To Test whether data are being sent or not , check the log cat or console of both phone and wearable. A data will be sent whenever you will change temperature unit on phone.
 
+Screens
+-------
+
+![screen](../master/screens/screen_1.png)   ![screen](../master/screens/screen_2.png)
+
+![screen](../master/screens/screen_1_land.png)   ![screen](../master/screens/screen_2_land.png)
+
+![screen](../master/screens/circular_image.png)   ![screen](../master/screens/square_image.png)
+
+
 Support
 -------
 
